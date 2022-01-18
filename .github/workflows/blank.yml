@@ -4,14 +4,14 @@ on:
   push:
     types: all
     
-  pull_request:
-    types: [closed]
-
-  release:
-    types: [published]
-
-  issues:
-    types: [closed, edited]
+#  pull_request:
+#    types: [closed]
+#
+#  release:
+#    types: [published]
+#
+#  issues:
+#    types: [closed, edited]
 
 jobs:
   generate_changelog:
