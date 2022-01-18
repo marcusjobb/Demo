@@ -15,7 +15,7 @@ on:
 
 jobs:
   generate_changelog:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest    
     name: Generate changelog for main branch
     steps:
       - uses: actions/checkout@v1
@@ -25,7 +25,7 @@ jobs:
         with:
           token: ${{ secrets.YOUR_GITHUB_TOKEN or GITHUB_TOKEN }}
           release_branch: main
-
+          
       - name: Commit files
         env:
           CI_USER: ${{ secrets.YOUR_GITHUB_USER }}
