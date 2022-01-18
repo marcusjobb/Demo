@@ -2,7 +2,7 @@ name: Changelog
 
 on:
   push:
-    types: all
+    branches: main
     
 #  pull_request:
 #    types: [closed]
