@@ -1,6 +1,9 @@
 name: Changelog
 
 on:
+  push:
+    types: all
+    
   pull_request:
     types: [closed]
 
@@ -21,6 +24,7 @@ jobs:
         uses: charmixer/auto-changelog-action@v1
         with:
           token: ${{ secrets.YOUR_GITHUB_TOKEN or GITHUB_TOKEN }}
+          release_branch: main
 
       - name: Commit files
         env:
